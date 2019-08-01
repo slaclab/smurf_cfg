@@ -54,8 +54,9 @@ AMCc:
           HighCycle: 0x5
           LowCycle: 0x5
         MicrowaveMuxCore[0]:
-          enable: 'True'          
+          enable: 'True'
           PLL[0]:
+            # 3.5012 GHz
             REG[0]:  0x000001C0
             REG[1]:  0x07E2AAA1
             REG[2]:  0x80032
@@ -70,6 +71,7 @@ AMCc:
             REG[11]:  0x61300B
             REG[12]:  0x0001041C
           PLL[1]:
+            # 4.0012 GHz  
             REG[0]:  0x00000200
             REG[1]:  0x08FD5551
             REG[2]:  0x40032
@@ -84,6 +86,7 @@ AMCc:
             REG[11]:  0x61300B
             REG[12]:  0x0001041C
           PLL[2]:
+            # 5.9988 GHz  
             REG[0]:  0x00200300
             REG[1]:  0xD180001
             REG[2]:  0x12
@@ -98,6 +101,7 @@ AMCc:
             REG[11]:  0x61300B
             REG[12]:  0x0001041C
           PLL[3]:
+            # 6.4988 GHz  
             REG[0]:  0x00200340
             REG[1]:  0xE32AAA1
             REG[2]:  0x80032
