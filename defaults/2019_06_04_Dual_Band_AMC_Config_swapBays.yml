@@ -512,8 +512,8 @@ AMCc:
             # SineGenFreq: 0x000010AB
             # LO1_Poff: 0x00085553
             # LO2_Poff: 0x00535541
-            synthesisScale: 0x3
-            analysisScale: 0x3
+            synthesisScale: 0x2
+            analysisScale: 0x2
             toneScale: 0x2
 
         ###########################################
