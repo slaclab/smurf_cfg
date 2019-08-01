@@ -54,7 +54,7 @@ AMCc:
           HighCycle: 0x5
           LowCycle: 0x5
         MicrowaveMuxCore[:]:
-          enable: 'True'          
+          enable: 'True'
           PLL[0]:
             # 5.5012 GHz
             REG[0]:  0x000002C0
