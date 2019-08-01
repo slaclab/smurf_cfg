@@ -11,16 +11,6 @@ etc..
 Here is an index of the defaults.yml files in this directory, along
 with descriptions of he cases in which each should be used:
 
-| defaults.yml file | description |
-|-------------------|-------------|
-|[2019_06_04_Dual_Band_AMC_Config_swapBays.yml](2019_06_04_Dual_Band_AMC_Config_swapBays.yml)|
- test |
-|[2019_06_04_Dual_Band_AMC_Config.yml](2019_06_04_Dual_Band_AMC_Config.yml)|
-||
-|[defaults_hbonly_c03_bay0.yml](defaults_hbonly_c03_bay0.yml)|
-|[defaults_lbonly_c02_bay0.yml](defaults_lbonly_c02_bay0.yml)|
-|[defaults_lbonly_c03_bay0.yml](defaults_lbonly_c03_bay0.yml)|
-
 <table>  
 <tr>  
       <th style="text-align:left; background-color: lightgray">defaults.yml</th>  
@@ -31,10 +21,31 @@ with descriptions of he cases in which each should be used:
 </tr>
 <tr>  
       <td><a href="defaults_hbonly_c02_bay0.yml">defaults_hbonly_c02_bay0.yml</a></td>  
-      <td></td>  
+      <td></td>
+</tr>
+<tr>
+      <td><a href="defaults_hbonly_c03_bay0.yml">defaults_hbonly_c03_bay0.yml</a></td>  
+      <td></td>        
+</tr>
+<tr>
+      <td><a href="defaults_lbonly_c02_bay0.yml">defaults_lbonly_c02_bay0.yml</a></td>  
+      <td></td>
+</tr>
+<tr>
+      <td><a href="defaults_lbonly_c03_bay0.yml">defaults_lbonly_c03_bay0.yml</a></td>  
+      <td></td>        
+</tr>
 </tr>  
 <tr>
       <th colspan="2" style="background-color: lightgray">Dual-bay</th>
+<tr>
+      <td><a href="2019_06_04_Dual_Band_AMC_Config.yml">2019_06_04_Dual_Band_AMC_Config.yml</a></td>  
+      <td></td>        
+</tr>
+<tr>
+      <td><a href="2019_06_04_Dual_Band_AMC_Config_swapBays.yml">2019_06_04_Dual_Band_AMC_Config_swapBays.yml</a></td>  
+      <td></td>
+</tr>
 </tr>
 </table>
 
