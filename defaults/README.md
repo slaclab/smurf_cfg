@@ -30,10 +30,12 @@ with descriptions of he cases in which each should be used:
       <th colspan="2" style="background-color: lightgray">Single-bay</th>
 </tr>
 <tr>  
-      <td>[defaults_hbonly_c02_bay0.yml](defaults_hbonly_c02_bay0.yml)</td>  
+      <td><a href="defaults_hbonly_c02_bay0.yml">defaults_hbonly_c02_bay0.yml</a></td>  
       <td></td>  
 </tr>  
 <tr>
       <th colspan="2" style="background-color: lightgray">Dual-bay</th>
 </tr>
 </table>
+
+
