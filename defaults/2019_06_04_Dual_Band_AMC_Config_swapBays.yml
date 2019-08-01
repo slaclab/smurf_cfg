@@ -501,8 +501,11 @@ AMCc:
             feedbackGain: 0x10
             feedbackLimit: 0x800
             waveformSelect: 0x0
-            dspReset: 0x0
+            toneScale: 0x2    
             dspEnable: 0x1
+            dspReset: 0x0
+            synthesisScale: 0x2
+            analysisScale: 0x2    
             # muxSelect: SigGen
             # Ch0MuxSel: SineGen
             # Ch0B1CjEn: CH0_B1_Norm
@@ -512,9 +515,6 @@ AMCc:
             # SineGenFreq: 0x000010AB
             # LO1_Poff: 0x00085553
             # LO2_Poff: 0x00535541
-            synthesisScale: 0x2
-            analysisScale: 0x2
-            toneScale: 0x2
 
         ###########################################
       AppTopJesd[:]:
