@@ -21,19 +21,19 @@ with descriptions of he cases in which each should be used:
 </tr>
 <tr>  
       <td><a href="defaults_hbonly_c02_bay0.yml">defaults_hbonly_c02_bay0.yml</a></td>  
-      <td></td>
+      <td>For use with a HB AMC in bay 0, no AMC in bay 1.  For use with C02 AMCs (hence the "c02" in the name).</td>
 </tr>
 <tr>
       <td><a href="defaults_hbonly_c03_bay0.yml">defaults_hbonly_c03_bay0.yml</a></td>  
-      <td></td>        
+      <td>For use with a HB AMC in bay 0, no AMC in bay 1.  For use with C03 AMCs (hence the "c03" in the name).</td>      
 </tr>
 <tr>
-      <td><a href="defaults_lbonly_c02_bay0.yml">defaults_lbonly_c02_bay0.yml</a></td>  
-      <td></td>
+      <td><a href="defaults_lbonly_c02_bay0.yml">defaults_lbonly_c02_bay0.yml</a></td>
+      <td>For use with a LB AMC in bay 0, no AMC in bay 1.  For use with C02 AMCs (hence the "c02" in the name).</td>      
 </tr>
 <tr>
-      <td><a href="defaults_lbonly_c03_bay0.yml">defaults_lbonly_c03_bay0.yml</a></td>  
-      <td></td>        
+      <td><a href="defaults_lbonly_c03_bay0.yml">defaults_lbonly_c03_bay0.yml</a></td>
+      <td>For use with a LB AMC in bay 0, no AMC in bay 1.  For use with C03 AMCs (hence the "c03" in the name).</td>            
 </tr>
 </tr>  
 <tr>
