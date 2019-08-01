@@ -23,17 +23,17 @@ with descriptions of he cases in which each should be used:
 
 <table>  
 <tr>  
-      <th>defaults.yml</th>  
-      <th>description</th>    
+      <th style="text-align:left; background-color: lightgray">defaults.yml</th>  
+      <th style="text-align:left; background-color: lightgray">description</th>    
 </tr>  
 <tr>  
-      <td colspan="2">Single-bay</td>
+      <th colspan="2" style="background-color: lightgray">Single-bay</th>
 </tr>
 <tr>  
       <td>[defaults_hbonly_c02_bay0.yml](defaults_hbonly_c02_bay0.yml)</td>  
       <td></td>  
 </tr>  
 <tr>
-      <td colspan="2">Dual-bay</td>
+      <th colspan="2" style="background-color: lightgray">Dual-bay</th>
 </tr>
 </table>
