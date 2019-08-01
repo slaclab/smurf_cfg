@@ -13,5 +13,9 @@ with descriptions of he cases in which each should be used:
 
 | defaults.yml file | description |
 |-------------------|-------------|
-|                   |             |
-
+|[2019_06_04_Dual_Band_AMC_Config_swapBays.yml](2019_06_04_Dual_Band_AMC_Config_swapBays.yml)|
+|[2019_06_04_Dual_Band_AMC_Config.yml](2019_06_04_Dual_Band_AMC_Config.yml)|
+|[defaults_hbonly_c02_bay0.yml](defaults_hbonly_c02_bay0.yml)|
+|[defaults_hbonly_c03_bay0.yml](defaults_hbonly_c03_bay0.yml)|
+|[defaults_lbonly_c02_bay0.yml](defaults_lbonly_c02_bay0.yml)|
+|[defaults_lbonly_c03_bay0.yml](defaults_lbonly_c03_bay0.yml)|
