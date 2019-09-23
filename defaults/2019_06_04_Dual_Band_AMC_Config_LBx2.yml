@@ -176,7 +176,7 @@ AMCc:
             REG[9]:  0x34337CC9
             REG[10]:  0x00C03FFA
             REG[11]:  0x61300B
-            REG[12]:  0x0001041C	  
+            REG[12]:  0x0001041C  
         MicrowaveMuxCore[:]:
           DBG:
             txSyncMask: 0x0    # Both DAC channels
