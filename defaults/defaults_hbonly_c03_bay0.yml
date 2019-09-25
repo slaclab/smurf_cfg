@@ -53,6 +53,9 @@ AMCc:
         RtmCryoDet:
           HighCycle: 0x5
           LowCycle: 0x5
+          LutCtrl:
+            Ctrl:
+              EnableCh: 0x0
         MicrowaveMuxCore[:]:
           enable: 'True'
           PLL[0]:
