@@ -66,6 +66,14 @@ with descriptions of he cases in which each should be used:
       rev (for both the LB and HB AMCs) must be C03 or higher.      
       </td>
 </tr>
+<tr>
+      <td><a href="2019_06_04_Dual_Band_AMC_Config_LBx2.yml">2019_06_04_Dual_Band_AMC_Config_LBx2.yml</a></td>  
+      <td>
+      For use with a LB AMCs installed in both bays.  The carrier rev
+      must be C02 or higher, and the AMC rev (for both the LB and HB
+      AMCs) must be C03 or higher.
+      </td>
+</tr>
 </tr>
 </table>
 
