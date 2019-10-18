@@ -360,7 +360,7 @@ AMCc:
             PDN_SYSREF: 0x0
             SYSREF_DEL_EN: 0x1
             SYSREF_DEL_HI: 0x0
-            SYSREF_DEL_LO: 0x7
+            SYSREF_DEL_LO: 0x5
             SLOW_SP_EN1: 0x1 # 0x1 = ADC sampling rates are slower than 2.5 GSPS
             SLOW_SP_EN2: 0x1 # 0x1 = ADC sampling rates are slower than 2.5 GSPS       
             JESD_OUTPUT_SWING: 0x4 # 0x4 = 960 mVPP (max. swing)
