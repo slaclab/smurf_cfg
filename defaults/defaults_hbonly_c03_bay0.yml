@@ -9,16 +9,10 @@ AMCc:
           WaveformEngineBuffers:
             StartAddr[0]: 0x0000000000000000
             StartAddr[1]: 0x0000000010000000
-            StartAddr[2]: 0x0000000020000000
-            StartAddr[3]: 0x0000000030000000
             EndAddr[0]:   0x0000000000004000
             EndAddr[1]:   0x0000000010004000
-            EndAddr[2]:   0x0000000020004000
-            EndAddr[3]:   0x0000000030004000
             Enabled[0]: 0x1 # Enabled:  Full rate only supports 2x channels of streaming
             Enabled[1]: 0x1 # Enabled:  Full rate only supports 2x channels of streaming
-            Enabled[2]: 0x0 # Enabled:  Full rate only supports 2x channels of streaming
-            Enabled[3]: 0x0 # Enabled:  Full rate only supports 2x channels of streaming
             Mode[:]: DoneWhenFull
             Init[:]: 0x0
             SoftTrigger[:]: 0x0
@@ -28,16 +22,10 @@ AMCc:
           WaveformEngineBuffers:
             StartAddr[0]: 0x0000000040000000
             StartAddr[1]: 0x0000000050000000
-            StartAddr[2]: 0x0000000060000000
-            StartAddr[3]: 0x0000000070000000
             EndAddr[0]:   0x0000000040004000
             EndAddr[1]:   0x0000000050004000
-            EndAddr[2]:   0x0000000060004000
-            EndAddr[3]:   0x0000000070004000
             Enabled[0]: 0x0 # Disabling 2nd DAQ MUX path
             Enabled[1]: 0x0 # Disabling 2nd DAQ MUX path
-            Enabled[2]: 0x0 # Disabling 2nd DAQ MUX path
-            Enabled[3]: 0x0 # Disabling 2nd DAQ MUX path
             Mode[:]: DoneWhenFull
             Init[:]: 0x0
             SoftTrigger[:]: 0x0
@@ -178,8 +166,8 @@ AMCc:
             LmkReg_0x0137: 0x16
             LmkReg_0x0138: 0x00
             LmkReg_0x0139: 0x03
-            LmkReg_0x013A: 0x04
-            LmkReg_0x013B: 0x00
+            LmkReg_0x013A: 0x00
+            LmkReg_0x013B: 0x80
             LmkReg_0x013C: 0x00
             LmkReg_0x013D: 0x08
             LmkReg_0x013E: 0x03
@@ -369,7 +357,10 @@ AMCc:
           ADC[:]:
             enable: True
             SYNCB_POL: 0x1
-            PDN_SYSREF: 0x1
+            PDN_SYSREF: 0x0
+            SYSREF_DEL_EN: 0x1
+            SYSREF_DEL_HI: 0x0
+            SYSREF_DEL_LO: 0x5
             SLOW_SP_EN1: 0x1 # 0x1 = ADC sampling rates are slower than 2.5 GSPS
             SLOW_SP_EN2: 0x1 # 0x1 = ADC sampling rates are slower than 2.5 GSPS       
             JESD_OUTPUT_SWING: 0x4 # 0x4 = 960 mVPP (max. swing)
@@ -462,7 +453,7 @@ AMCc:
           InvertSync: Inverted
           ReplaceEnable: Enabled
           SubClass: 0x1
-          SysrefDelay: 0xB
+          SysrefDelay: 0x0
         JesdTx:
           Enable: 0x3CF # Both DAC channels
           #Enable: 0xF   # Only using DAC[0]
