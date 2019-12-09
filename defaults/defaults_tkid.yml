@@ -248,10 +248,10 @@ AMCc:
             DacReg[19]: 0x0000
             DacReg[20]: 0x0000
             DacReg[21]: 0x0000
-            DacReg[22]: 0x4e00  # This is the upper 16 bits of the NCO frequency for the DACAB path
+            DacReg[22]: 0x3400  # This is the upper 16 bits of the NCO frequency for the DACAB path
             DacReg[23]: 0x0000
             DacReg[24]: 0x0000
-            DacReg[25]: 0x4e00  # This is the upper 16 bits of the NCO frequency for the DACCD path
+            DacReg[25]: 0x3400  # This is the upper 16 bits of the NCO frequency for the DACCD path
             DacReg[26]: 0x0025
             DacReg[27]: 0x0000
             DacReg[28]: 0x0000
@@ -374,7 +374,7 @@ AMCc:
               DUAL_BAND_EN: 0x0
               REAL_OUT_EN: 0x0
               DDC0_NCO1_LSB: 0x00
-              DDC0_NCO1_MSB: 0x4e
+              DDC0_NCO1_MSB: 0x34
               DDC0_NCO2_LSB: 0x00
               DDC0_NCO2_MSB: 0x00
               DDC0_NCO3_LSB: 0x00
