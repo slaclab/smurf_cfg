@@ -74,6 +74,14 @@ with descriptions of he cases in which each should be used:
       AMCs) must be C03 or higher.
       </td>
 </tr>
+<tr>
+      <td><a href="defaults_lbonly_c03_bay0bay1.yml">defaults_lbonly_c03_bay0bay1.yml</a></td>  
+      <td>
+      For use with Rogue4 and LB AMCs installed in both bays.  The 
+      carrier rev must be C02 or higher, and the AMC rev (for both 
+      the LB AMCs) must be C03 or higher.
+      </td>
+</tr>
 </tr>
 </table>
 
