@@ -20,28 +20,28 @@ with descriptions of he cases in which each should be used:
       <th colspan="2" style="background-color: lightgray">Single-bay</th>
 </tr>
 <tr>  
-      <td><a href="defaults_hbonly_c02_bay0.yml">defaults_hbonly_c02_bay0.yml</a></td>  
+      <td><a href="defaults_c02_hb_none.yml">defaults_c02_hb_none.yml</a></td>  
       <td>
       For use with a HB AMC in bay 0, no AMC in bay 1.  For use with
       C02 AMCs (hence the "c02" in the name).
       </td>
 </tr>
 <tr>
-      <td><a href="defaults_hbonly_c03_bay0.yml">defaults_hbonly_c03_bay0.yml</a></td>  
+      <td><a href="defaults_c03_hb_none.yml">defaults_c03_hb_none.yml</a></td>  
       <td>
       For use with a HB AMC in bay 0, no AMC in bay 1.  For use with
       C03 AMCs (hence the "c03" in the name).
       </td>      
 </tr>
 <tr>
-      <td><a href="defaults_lbonly_c02_bay0.yml">defaults_lbonly_c02_bay0.yml</a></td>
+      <td><a href="defaults_c02_lb_none.yml">defaults_c02_lb_none.yml</a></td>
       <td>
       For use with a LB AMC in bay 0, no AMC in bay 1.  For use with
       C02 AMCs (hence the "c02" in the name).
       </td>      
 </tr>
 <tr>
-      <td><a href="defaults_lbonly_c03_bay0.yml">defaults_lbonly_c03_bay0.yml</a></td>
+      <td><a href="defaults_c03_lb_none.yml">defaults_c03_lb_none.yml</a></td>
       <td>
       For use with a LB AMC in bay 0, no AMC in bay 1.  For use with
       C03 AMCs (hence the "c03" in the name).
@@ -51,7 +51,7 @@ with descriptions of he cases in which each should be used:
 <tr>
       <th colspan="2" style="background-color: lightgray">Dual-bay</th>
 <tr>
-      <td><a href="2019_06_04_Dual_Band_AMC_Config.yml">2019_06_04_Dual_Band_AMC_Config.yml</a></td>  
+      <td><a href="defaults_c03_lb_hb.yml">defaults_c03_lb_hb.yml</a></td>  
       <td>
       For use with a LB AMC installed in bay 0, and a HB AMC installed
       in bay 1.  The carrier rev must be C02 or higher, and the AMC
@@ -59,7 +59,7 @@ with descriptions of he cases in which each should be used:
       </td>        
 </tr>
 <tr>
-      <td><a href="2019_06_04_Dual_Band_AMC_Config_swapBays.yml">2019_06_04_Dual_Band_AMC_Config_swapBays.yml</a></td>  
+      <td><a href="defaults_c03_hb_lb.yml">defaults_c03_hb_lb.yml</a></td>  
       <td>
       For use with a HB AMC installed in bay 0, and a LB AMC installed
       in bay 1.  The carrier rev must be C02 or higher, and the AMC
@@ -75,7 +75,7 @@ with descriptions of he cases in which each should be used:
       </td>
 </tr>
 <tr>
-      <td><a href="defaults_lbonly_c03_bay0bay1.yml">defaults_lbonly_c03_bay0bay1.yml</a></td>  
+      <td><a href="defaults_c03_lb_lb.yml">defaults_c03_lb_lb.yml</a></td>  
       <td>
       For use with Rogue4 and LB AMCs installed in both bays.  The 
       carrier rev must be C02 or higher, and the AMC rev (for both 
