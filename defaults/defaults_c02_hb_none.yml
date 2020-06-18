@@ -307,17 +307,17 @@ AMCc:
             DacReg[78]: 0x0f2f  # Enable scrambler
             DacReg[79]: 0x1c61
             DacReg[80]: 0x0000
-            DacReg[81]: 0x0026  # sync_request_ena_link0
-            DacReg[82]: 0x0026  # error_ena_link0
+            DacReg[81]: 0x00c7  # sync_request_ena_link0
+            DacReg[82]: 0x00c7  # error_ena_link0
             DacReg[83]: 0x0000
-            DacReg[84]: 0x0026  # sync_request_ena_link1
-            DacReg[85]: 0x0026  # error_ena_link1
+            DacReg[84]: 0x00c7  # sync_request_ena_link1
+            DacReg[85]: 0x00c7  # error_ena_link1
             DacReg[86]: 0x0000
-            DacReg[87]: 0x0026  # sync_request_ena_link2
-            DacReg[88]: 0x0026  # error_ena_link2
+            DacReg[87]: 0x00c7  # sync_request_ena_link2
+            DacReg[88]: 0x00c7  # error_ena_link2
             DacReg[89]: 0x0000
-            DacReg[90]: 0x0026  # sync_request_ena_link3
-            DacReg[91]: 0x0026  # error_ena_link3
+            DacReg[90]: 0x00c7  # sync_request_ena_link3
+            DacReg[91]: 0x00c7  # error_ena_link3
             DacReg[92]: 0x5555  # Skip 2 then use only the next sysref
             DacReg[93]: 0x0000
             DacReg[94]: 0x0000
