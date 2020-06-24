@@ -539,7 +539,7 @@ AMCc:
           InvertSync: Inverted
           ReplaceEnable: Enabled
           SubClass: 0x1
-          SysrefDelay: 0x0
+          SysrefDelay: 0x8
         JesdTx:
           Enable: 0x3CF # Both DAC channels
           #Enable: 0xF   # Only using DAC[0]
