@@ -496,7 +496,7 @@ AMCc:
           dataOutMux[5]: OutputOnes # Unused channel
           testOutMux[:]: SquareWave
 
-          txDiffCtrl[:]: 0xF8
+          txDiffCtrl[:]: 0xFF
           txDiffCtrl[4]: 0x00 # Unused channel
           txDiffCtrl[5]: 0x00 # Unused channel
 
