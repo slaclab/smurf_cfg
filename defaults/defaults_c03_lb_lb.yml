@@ -114,6 +114,15 @@ AMCc:
             #txSyncMask: 0x2  # Only using DAC[0]
             # txSyncMask: 0x1  # Only using DAC[1]
             dacSpiMode: 0x1 # 4-wire SPI DAC
+          ATT:
+            DC[1]: 0
+            DC[2]: 0
+            DC[3]: 0
+            DC[4]: 0
+            UC[1]: 12
+            UC[2]: 12
+            UC[3]: 12
+            UC[4]: 12
           LMK:
             EnableSync: 0xFF
             EnableSysRef: 0x3
@@ -126,7 +135,7 @@ AMCc:
             LmkReg_0x0104: 0x22
             LmkReg_0x0105: 0x00
             LmkReg_0x0106: 0x70
-            LmkReg_0x0107: 0x06 # SDCLK = powerdown, DCLK = LVPECL 2000 mV
+            LmkReg_0x0107: 0x01 # SDCLK = powerdown, DCLK = LVDS
 
             # DCLKout2 = DAC[0] - SDCLKout3 = DAC[0]
             LmkReg_0x0108: 0x61
@@ -135,7 +144,7 @@ AMCc:
             LmkReg_0x010C: 0x22
             LmkReg_0x010D: 0x00
             LmkReg_0x010E: 0x70
-            LmkReg_0x010F: 0x66 # SDCLK = LVPECL 2000 mV, DCLK = LVPECL 2000 mV
+            LmkReg_0x010F: 0x61 # SDCLK = LVPECL 2000 mV, DCLK = LVDS
 
             # DCLKout4 = ADC[0] - SDCLKout5 = ADC[0]
             LmkReg_0x0110: 0x61
@@ -162,7 +171,7 @@ AMCc:
             LmkReg_0x0124: 0x22
             LmkReg_0x0125: 0x00
             LmkReg_0x0126: 0x70
-            LmkReg_0x0127: 0x66 # SDCLK = LVPECL 2000 mV, DCLK = LVPECL 2000 mV
+            LmkReg_0x0127: 0x61 # SDCLK = LVPECL 2000 mV, DCLK = LVDS
 
             # DCLKout10 = ADC[1] - SDCLKout11 = ADC[1]
             LmkReg_0x0128: 0x61
@@ -171,7 +180,7 @@ AMCc:
             LmkReg_0x012C: 0x22
             LmkReg_0x012D: 0x00
             LmkReg_0x012E: 0x70
-            LmkReg_0x012F: 0x66 # SDCLK = LVPECL 2000 mV, DCLK = LVPECL 2000 mV
+            LmkReg_0x012F: 0x61 # SDCLK = LVPECL 2000 mV, DCLK = LVDS
 
             # DCLKout12 = FPGA - SDCLKout13 = FPGA
             LmkReg_0x0130: 0x08
@@ -180,7 +189,7 @@ AMCc:
             LmkReg_0x0134: 0x22
             LmkReg_0x0135: 0x00
             LmkReg_0x0136: 0x70
-            LmkReg_0x0137: 0x16 # SDCLK = LVDS, DCLK = LVPECL 2000 mV
+            LmkReg_0x0137: 0x11 # SDCLK = LVDS, DCLK = LVDS
 
             LmkReg_0x0138: 0x00
             LmkReg_0x0139: 0x03
@@ -320,23 +329,23 @@ AMCc:
             DacReg[72]: 0x31c3
             DacReg[73]: 0x0000  # JESD Link selection.  Seems it should be set like the eval board.
             DacReg[74]: 0x0f01  # Turns on serdes 0-3 and does NOT reset JESD reset.
-            DacReg[75]: 0x0801  # Number of octates per frame (1) and elastic buffers as set on eval board
+            DacReg[75]: 0x1001  # Number of octates per frame (1) and elastic buffers as set on eval board
             DacReg[76]: 0x1F03  # Number of JESD lanes being use (3 - means 4) and 32 frames per multifame.
             DacReg[77]: 0x0300  # Number of converters per link - 4
             DacReg[78]: 0x0f2f  # Enable scrambler
-            DacReg[79]: 0x1c61
+            DacReg[79]: 0x1CE1
             DacReg[80]: 0x0000
-            DacReg[81]: 0x00c7  # sync_request_ena_link0
-            DacReg[82]: 0x00c7  # error_ena_link0
+            DacReg[81]: 0x00DF  # sync_request_ena_link0
+            DacReg[82]: 0x00DF  # error_ena_link0
             DacReg[83]: 0x0000
-            DacReg[84]: 0x00c7  # sync_request_ena_link1
-            DacReg[85]: 0x00c7  # error_ena_link1
+            DacReg[84]: 0x00DF  # sync_request_ena_link1
+            DacReg[85]: 0x00DF  # error_ena_link1
             DacReg[86]: 0x0000
-            DacReg[87]: 0x00c7  # sync_request_ena_link2
-            DacReg[88]: 0x00c7  # error_ena_link2
+            DacReg[87]: 0x00DF  # sync_request_ena_link2
+            DacReg[88]: 0x00DF  # error_ena_link2
             DacReg[89]: 0x0000
-            DacReg[90]: 0x00c7  # sync_request_ena_link3
-            DacReg[91]: 0x00c7  # error_ena_link3
+            DacReg[90]: 0x00DF  # sync_request_ena_link3
+            DacReg[91]: 0x00DF  # error_ena_link3
             DacReg[92]: 0x5555  # Skip 2 then use only the next sysref
             DacReg[93]: 0x0000
             DacReg[94]: 0x0000
@@ -466,7 +475,7 @@ AMCc:
           InvertAdcData: 0x00
           LinkErrMask: 0x3F # Mask Enable the errors that are required to brake the link. bit 5-0: positionErr - s_bufOvf - s_bufUnf - dispErr - decErr - s_alignErr
           ScrambleEnable: 0x1
-          ResetGTs: 0x0
+          ResetGTs: 0x1 # 0x1 to put reset before LMK init then set to 0x0 during AppTop.Init()
           ClearErrors: 0x0
           InvertSync: Inverted
           ReplaceEnable: Enabled
@@ -484,6 +493,7 @@ AMCc:
           SquarePeriod: 0x0004
           RampStep: 0x0001
           ScrambleEnable: 0x1
+          ResetGTs: 0x1 # 0x1 to put reset before LMK init then set to 0x0 during AppTop.Init()
           TestSigEnable: 0x0
           InvertSync: 0x0
           ReplaceEnable: 0x1
@@ -500,7 +510,7 @@ AMCc:
           dataOutMux[5]: OutputOnes # Unused channel
           testOutMux[:]: SquareWave
 
-          txDiffCtrl[:]: 0xF8
+          txDiffCtrl[:]: 0xFF
           txDiffCtrl[4]: 0x00 # Unused channel
           txDiffCtrl[5]: 0x00 # Unused channel
 
