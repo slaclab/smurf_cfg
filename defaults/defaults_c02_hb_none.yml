@@ -471,7 +471,7 @@ AMCc:
           InvertAdcData: 0x00
           LinkErrMask: 0x3F # Mask Enable the errors that are required to brake the link. bit 5-0: positionErr - s_bufOvf - s_bufUnf - dispErr - decErr - s_alignErr
           ScrambleEnable: 0x1
-          ResetGTs: 0x0
+          ResetGTs: 0x1 # 0x1 to put reset before LMK init then set to 0x0 during AppTop.Init()
           ClearErrors: 0x0
           InvertSync: Inverted
           ReplaceEnable: Enabled
@@ -489,6 +489,7 @@ AMCc:
           SquarePeriod: 0x0004
           RampStep: 0x0001
           ScrambleEnable: 0x1
+          ResetGTs: 0x1 # 0x1 to put reset before LMK init then set to 0x0 during AppTop.Init()
           TestSigEnable: 0x0
           InvertSync: 0x0
           ReplaceEnable: 0x1
