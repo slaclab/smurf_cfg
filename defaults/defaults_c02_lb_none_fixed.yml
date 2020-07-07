@@ -111,6 +111,15 @@ AMCc:
             txSyncMask: 0x0    # Both DAC channels
             #txSyncMask: 0x2  # Only using DAC[0]
             # txSyncMask: 0x1  # Only using DAC[1]
+          ATT:
+            DC[1]: 0
+            DC[2]: 0
+            DC[3]: 0
+            DC[4]: 0
+            UC[1]: 12
+            UC[2]: 12
+            UC[3]: 12
+            UC[4]: 12
           LMK:
             EnableSync: 0xFF
             EnableSysRef: 0x3
