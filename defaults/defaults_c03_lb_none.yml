@@ -460,7 +460,7 @@ AMCc:
             toneScale: 0x2
             dspEnable: 0x1
             dspReset: 0x0
-            synthesisScale: 0x2
+            synthesisScale: 0x1
             analysisScale: 0x2
 
         ###########################################
