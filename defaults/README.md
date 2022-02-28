@@ -8,7 +8,7 @@ digitizers.
 The file format is defaults\_version\_bay0type\_bay1type.yml.
 
 - version: c02, c03. The version of the AMC mezzanine cards in both bay 0 and bay 1.
-- bay0type: hb, lb. The type of AMC in bay 0, which is on the right hand side of the carrier.
+- bay0type: hb, lb. The type of AMC in bay 0, which is on the right hand side facing the carrier bays.
 - bay1type: hb, lb. The type of AMC in bay 1, on the left.
 
 <table>  
