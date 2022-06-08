@@ -1,15 +1,15 @@
 # SMuRF defaults.yml files
 
-One of the first things [pysmurf](https://github.com/slaclab/pysmurf)
-does when it's initializing the SMuRF hardware is load the
-defaults.yml file, which does a lot of the low level hardware
-configuration, like configuring the SMuRF DACs, clocks, digitizers,
-etc..
+The pysmurf server usually detects one of the following configuration files,
+otherwise it must be specified manually in start\_server.sh.  it sets various
+parameters at the firmware level, like configuring the SMuRF DACs, clocks, and
+digitizers. 
 
-# defaults.yml variants
+The file format is defaults\_version\_bay0type\_bay1type.yml.
 
-Here is an index of the defaults.yml files in this directory, along
-with descriptions of he cases in which each should be used:
+- version: c02, c03. The version of the AMC mezzanine cards in both bay 0 and bay 1.
+- bay0type: hb, lb. The type of AMC in bay 0, which is on the right hand side facing the carrier bays.
+- bay1type: hb, lb. The type of AMC in bay 1, on the left.
 
 <table>  
 <tr>  
