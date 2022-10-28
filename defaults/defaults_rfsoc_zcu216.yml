@@ -1,0 +1,76 @@
+AMCc:
+  SmurfProcessor:
+    ChannelMapper:
+      Mask: [0]
+  FpgaTopLevel:
+    AmcCarrierCore:
+      AmcCarrierTiming:
+        TimingFrameRx:
+            RxPolarity: 0x0
+      AmcCarrierBsa:
+        BsaWaveformEngine[0]:
+          WaveformEngineBuffers:
+            StartAddr[0]: 0x0000000000000000
+            StartAddr[1]: 0x0000000010000000
+            EndAddr[0]:   0x0000000000004000
+            EndAddr[1]:   0x0000000010004000
+            Enabled[0]: 0x1 # Enabled:  Full rate only supports 2x channels of streaming
+            Enabled[1]: 0x1 # Enabled:  Full rate only supports 2x channels of streaming
+            Mode[:]: DoneWhenFull
+            Init[:]: 0x0
+            SoftTrigger[:]: 0x0
+            MsgDest[:]: Auto-Readout
+            FramesAfterTrigger[:]: 0x0
+        BsaWaveformEngine[1]:
+          WaveformEngineBuffers:
+            StartAddr[0]: 0x0000000040000000
+            StartAddr[1]: 0x0000000050000000
+            EndAddr[0]:   0x0000000040004000
+            EndAddr[1]:   0x0000000050004000
+            Enabled[0]: 0x0 # Disabling 2nd DAQ MUX path
+            Enabled[1]: 0x0 # Disabling 2nd DAQ MUX path
+            Mode[:]: DoneWhenFull
+            Init[:]: 0x0
+            SoftTrigger[:]: 0x0
+            MsgDest[:]: Auto-Readout
+            FramesAfterTrigger[:]: 0x0
+      AxiSy56040:
+        enable: 'False'
+    AppTop:
+      AppCore:
+        RtmCryoDet:
+          enable: 'False'
+        MicrowaveMuxCore[:]:
+          enable: 'False'
+        ###########################################
+        ## System Generator Configuration Registers
+        ###########################################
+        SysgenCryo:
+          Base[:]:
+            ScratchPad: 0xDEADBEEF
+            filterAlpha: 0x4000
+            rfEnable: 1
+            feedbackGain: 0x10
+            feedbackLimit: 0x800
+            waveformSelect: 0x0
+            toneScale: 0x2
+            dspEnable: 0x1
+            dspReset: 0x0
+            synthesisScale: 0x1
+            analysisScale: 0x2
+        ###########################################
+      AppTopJesd[:]:
+        enable: 'False'
+      DaqMuxV2[:]:
+        InputMuxSel[:]: 'Disabled'
+        FormatDataWidth[:]: 'D16-bit'
+        FormatSign[:]: 'Unsigned'
+        DecimationAveraging[:]: 'Disabled'
+        PacketHeaderEn: 'Disabled'
+        TriggerHwAutoRearm: 'Disabled'
+        TriggerHwArm: '0x0'
+        TriggerCascMask: 'Disabled'
+      DacSigGen[:]:
+        EnableMask: 0x3   # Enable both channels
+        ModeMask:   0x3   # Set both channels into 'Periodic Mode'
+        SignFormat: 0x0   # Set both channels to 'Signed 2's complement' format
