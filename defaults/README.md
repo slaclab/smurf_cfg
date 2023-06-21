@@ -115,6 +115,12 @@ The file format is defaults\_version\_bay0type\_bay1type.yml.
       frequency).
       </td>
 </tr>
+<tr>
+      <td><a href="defaults_rfsoc_zcu208.yml">defaults_rfsoc_zcu208.yml</a></td>  
+      <td>
+      For use with Rogue4 and the RFSoC SMuRF port to the Xilinx ZCU208 evaluation board.
+      </td>
+</tr>
 </tr>
 </table>
 
