@@ -118,8 +118,3 @@ The file format is defaults\_version\_bay0type\_bay1type.yml.
 </table>
 
 
--rw-r--r-- 1 cryo smurf 23403 Jun 13 11:12 defaults_c03_tkid_none_595pt2MHz.yml
--rw-r--r-- 1 cryo smurf 23513 Jun 13 11:12 defaults_c03_tkid_none_480MHz.yml
-lrwxrwxrwx 1 cryo smurf    36 Jun 21 14:02 defaults_c03_tkid_none.yml -> defaults_c03_tkid_none_595pt2MHz.yml
-
-
