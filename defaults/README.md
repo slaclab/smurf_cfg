@@ -82,7 +82,44 @@ The file format is defaults\_version\_bay0type\_bay1type.yml.
       the LB AMCs) must be C03 or higher.
       </td>
 </tr>
+<tr>
+      <td><a href="defaults_c03_tkid_none_480MHz.yml">defaults_c03_tkid_none_480MHz.yml</a></td>  
+      <td>
+      For use with Rogue4 and a TKID AMC installed in bay 0.  Assumes
+      the carrier rev is **C01** (the only difference between this and
+      the defaults.ymls for later rev carriers is that we bypass the
+      JESD sysref min/max check) and the AMC base board rev is C03.
+      Programs the ADC/DAC LO to 480 MHz.
+      </td>
+</tr>
+<tr>
+      <td><a href="defaults_c03_tkid_none_595pt2MHz.yml">defaults_c03_tkid_none_595pt2MHz.yml</a></td>  
+      <td>
+      For use with Rogue4 and a TKID AMC installed in bay 0.  Assumes
+      the carrier rev is **C01** (the only difference between this and
+      the defaults.ymls for later rev carriers is that we bypass the
+      JESD sysref min/max check) and the AMC base board rev is C03.
+      Programs the ADC/DAC LO to 595.2 MHz.
+      </td>
+</tr>
+<tr>
+      <td><a href="defaults_c03_tkid_none.yml">defaults_c03_tkid_none.yml</a></td>  
+      <td>
+      For use with Rogue4 and a TKID AMC installed in bay 0.  Assumes
+      the carrier rev is **C01** (the only difference between this and
+      the defaults.ymls for later rev carriers is that we bypass the
+      JESD sysref min/max check) and the AMC base board rev is C03.
+      This soft link determines which defaults yml is used if the
+      SMuRF server is booted with hardwarew detection (where currently
+      the only difference between defaults is the LO frequency).
+      </td>
+</tr>
 </tr>
 </table>
+
+
+-rw-r--r-- 1 cryo smurf 23403 Jun 13 11:12 defaults_c03_tkid_none_595pt2MHz.yml
+-rw-r--r-- 1 cryo smurf 23513 Jun 13 11:12 defaults_c03_tkid_none_480MHz.yml
+lrwxrwxrwx 1 cryo smurf    36 Jun 21 14:02 defaults_c03_tkid_none.yml -> defaults_c03_tkid_none_595pt2MHz.yml
 
 

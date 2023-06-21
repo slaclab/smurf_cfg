@@ -274,18 +274,18 @@ AMCc:
             DacReg[19]: 0x0000
             DacReg[20]: 0x0000
             DacReg[21]: 0x0000
-            # Changed from 0x4e00 -> 0x3200 ; 748.8 MHz -> 480 MHz LO
-            #  for TKIDs.  Must be a multiple of 19.2 MHz.  We have no
+            #  DAC LO.  Must be a multiple of 19.2 MHz.  We have no
             #  idea why because we thought it was supposed to be
-            #  2.4MHz.  Must adjust ADC[:]:DDC0_NCO1_MSB to match.
-            DacReg[22]: 0x3200  # This is the upper 16 bits of the NCO frequency for the DACAB path; modified
+            #  2.4MHz.  Must adjust ADC[:]:DDC0_NCO1_MSB to match,
+            #  but that's hardcoded in cryo-det right now.
+            DacReg[22]: 0x3e00  # This is the upper 16 bits of the NCO frequency for the DACAB path; modifie
             DacReg[23]: 0x0000
             DacReg[24]: 0x0000
-            # Changed from 0x4e00 -> 0x3200 ; 748.8 MHz -> 480 MHz LO
-            #  for TKIDs.  Must be a multiple of 19.2 MHz.  We have no
+            #  DAC LO.  Must be a multiple of 19.2 MHz.  We have no
             #  idea why because we thought it was supposed to be
-            #  2.4MHz.  Must adjust ADC[:]:DDC0_NCO1_MSB to match.
-            DacReg[25]: 0x3200  # This is the upper 16 bits of the NCO frequency for the DACCD path; modified
+            #  2.4MHz.  Must adjust ADC[:]:DDC0_NCO1_MSB to match,
+            #  but that's hardcoded in cryo-det right now.
+            DacReg[25]: 0x3e00  # This is the upper 16 bits of the NCO frequency for the DACCD path; modified
             DacReg[26]: 0x0025
             DacReg[27]: 0x0000
             DacReg[28]: 0x0000
@@ -408,11 +408,12 @@ AMCc:
               DUAL_BAND_EN: 0x0
               REAL_OUT_EN: 0x0
               DDC0_NCO1_LSB: 0x00 #modified
-              # Changed from 0x4e -> 0x32 ; 748.8 MHz -> 480 MHz LO
-              #  for TKIDs.  Must be a multiple of 19.2 MHz.  We have no
+              #  ADC LO.  Must be a multiple of 19.2 MHz.  We have no
               #  idea why because we thought it was supposed to be
               #  2.4MHz.  Must adjust DacReg[22] and DacReg[25] to match.
-              DDC0_NCO1_MSB: 0x32 #modified
+              # Oops - changing here does nothing, hardcoded in
+              # cryo-det-kid.
+              DDC0_NCO1_MSB: 0x3e
               DDC0_NCO2_LSB: 0x00
               DDC0_NCO2_MSB: 0x00
               DDC0_NCO3_LSB: 0x00

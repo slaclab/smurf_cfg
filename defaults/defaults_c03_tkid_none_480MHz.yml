@@ -36,7 +36,8 @@ AMCc:
         OutputConfig[1]: 0x0
         OutputConfig[2]: 0x1
         OutputConfig[3]: 0x1
-    AppTop:
+    AppTop:    
+      BypassSysRefMinMax: 'True'
       AppCore:
         RtmCryoDet:
           HighCycle: 0x5
@@ -411,6 +412,8 @@ AMCc:
               #  for TKIDs.  Must be a multiple of 19.2 MHz.  We have no
               #  idea why because we thought it was supposed to be
               #  2.4MHz.  Must adjust DacReg[22] and DacReg[25] to match.
+              # Oops - changing here does nothing, hardcoded in
+              # cryo-det-kid.
               DDC0_NCO1_MSB: 0x32 #modified
               DDC0_NCO2_LSB: 0x00
               DDC0_NCO2_MSB: 0x00
