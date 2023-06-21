@@ -86,7 +86,7 @@ The file format is defaults\_version\_bay0type\_bay1type.yml.
       <td><a href="defaults_c03_tkid_none_480MHz.yml">defaults_c03_tkid_none_480MHz.yml</a></td>  
       <td>
       For use with Rogue4 and a TKID AMC installed in bay 0.  Assumes
-      the carrier rev is **C01** (the only difference between this and
+      the carrier rev is <b>C01</b> (the only difference between this and
       the defaults.ymls for later rev carriers is that we bypass the
       JESD sysref min/max check) and the AMC base board rev is C03.
       Programs the ADC/DAC LO to 480 MHz.
@@ -96,7 +96,7 @@ The file format is defaults\_version\_bay0type\_bay1type.yml.
       <td><a href="defaults_c03_tkid_none_595pt2MHz.yml">defaults_c03_tkid_none_595pt2MHz.yml</a></td>  
       <td>
       For use with Rogue4 and a TKID AMC installed in bay 0.  Assumes
-      the carrier rev is **C01** (the only difference between this and
+      the carrier rev is <b>C01</b> (the only difference between this and
       the defaults.ymls for later rev carriers is that we bypass the
       JESD sysref min/max check) and the AMC base board rev is C03.
       Programs the ADC/DAC LO to 595.2 MHz.
@@ -106,7 +106,7 @@ The file format is defaults\_version\_bay0type\_bay1type.yml.
       <td><a href="defaults_c03_tkid_none.yml">defaults_c03_tkid_none.yml</a></td>  
       <td>
       For use with Rogue4 and a TKID AMC installed in bay 0.  Assumes
-      the carrier rev is **C01** (the only difference between this and
+      the carrier rev is <b>C01</b> (the only difference between this and
       the defaults.ymls for later rev carriers is that we bypass the
       JESD sysref min/max check) and the AMC base board rev is C03.
       This soft link determines which defaults yml is used if the
