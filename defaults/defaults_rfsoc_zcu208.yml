@@ -39,7 +39,7 @@ AMCc:
     AppTop:
       AppCore:
         RtmCryoDet:
-          enable: 'False'
+          enable: 'True'
         MicrowaveMuxCore[:]:
           enable: 'False'
         ###########################################
