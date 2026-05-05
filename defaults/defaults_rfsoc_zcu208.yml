@@ -38,6 +38,7 @@ AMCc:
         enable: 'False'
     AppTop:
       AppCore:
+        readoutDelay: 1300  # correct off-by-one latency in frame timing
         RtmCryoDet:
           enable: 'False'
         MicrowaveMuxCore[:]:
