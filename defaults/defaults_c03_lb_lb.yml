@@ -41,6 +41,7 @@ AMCc:
         OutputConfig[3]: 0x1
     AppTop:
       AppCore:
+        readoutDelay: 1300  # correct off-by-one latency in frame timing
         RtmCryoDet:
           HighCycle: 0x5
           LowCycle: 0x5
