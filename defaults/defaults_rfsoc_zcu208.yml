@@ -40,7 +40,13 @@ AMCc:
       AppCore:
         readoutDelay: 1300  # correct off-by-one latency in frame timing
         RtmCryoDet:
-          enable: 'False'
+          # Must be enabled so InitRtm() runs during Init().  Pyrogue6
+	  # silently skips commands on disabled devices.  Without this,
+	  # the flux ramp trigger hardware never gets initialized after
+	  # power-on and streaming frames are never generated.  The
+	  # RFSoC has no physical RTM, but the firmware still uses these
+	  # registers for flux ramp trigger control.
+          enable: 'True'
         MicrowaveMuxCore[:]:
           enable: 'False'
         ###########################################
