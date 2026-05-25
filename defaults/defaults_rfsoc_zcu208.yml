@@ -47,6 +47,14 @@ AMCc:
           # RFSoC has no physical RTM, but the firmware still uses these
           # registers for flux ramp trigger control.
           enable: 'True'
+          RtmSpiCryo:
+            enable: 'False'
+          RtmSpiMax:
+            enable: 'False'
+          RtmSpiSr:
+            enable: 'False'
+          LutCtrl:
+            enable: 'False'
         MicrowaveMuxCore[:]:
           enable: 'False'
         ###########################################
